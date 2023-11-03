@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.ventana {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.ingreso-bienvenida {
+    background-color: #055492;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 100%;
+    height: 25%;
+    display: flex;
+}
+
+.logo img {
+    width: 100px;
+    padding-left: 10px;
+}
+
+.logo p {
+    padding-left: 20px;
+    margin: auto 0;
+    font-size: 40px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.bienvenida {
+    width: 85%;
+    height: 30%;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.bienvenida h1 {
+    font-size: 3em;
+    color: #7fcae6;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bienvenida p {
+    font-size: 1.7em;
+    color: #fff;
+}
+
+.contenedor {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ingreso-container {
+    background-color: #055492; 
+    width: 400px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    text-align: center;
+    color: #7fcae6;
+    padding: 0 0 0 0;
+    margin-bottom: 5px;
+    font-size: 30px;
+}
+
+.ingreso-form {
+    padding: 10px 35px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.ingreso-form .email,
+.ingreso-form .password {
+    margin: 10px 0;
+    text-align: left;
+}
+
+.email input,
+.password input {
+    width: calc(100% - 6px);
+    height: 35px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 2px;
+    border: none;
+    border-bottom: 2px solid #3498db;
+    outline: none;
+    font-size: 15px;
+}
+
+.recuerdame {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.recuerdame label input {
+    accent-color: #fff;
+    margin: 3px;
+}
+
+.recuerdame a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.recuerdame a:hover {
+    text-decoration: underline;
+}
+
+#btnIngresar {
+    background-color: #229fcc;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#btnIngresar:hover {
+    background-color:  #239b56 ;
+}
+
+.link-registro {
+    font-size: 0.8em;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.link-registro p a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
+    margin-left: 5px;
+}
+
+.link-registro p a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+    .ingreso-container {
+        width: 60%;
+    }
+
+    .bienvenida {
+        margin: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .bienvenida h1 {
+        font-size: 2em;
+        margin: 0;
+        margin-bottom: 5px;
+    }
+    
+    .bienvenida p {
+        font-size: 1.2em;
+        margin: 0;
+    }
+}
+
+@media (max-width: 766px) {
+    .ingreso-bienvenida {
+        width: 100%;
+        height: 18%;
+    }
+
+    .contenedor {
+        width: 100%;
+        height: 80%;
+    }
+
+    .ventana {
+        display: flex;
+        flex-direction: column;
+    }
+    .ingreso-container {
+        max-width: 400px;
+        width: 60%;
+        
+    }
+
+    .ingreso-form {
+        padding: 10px 15px;
+    }
+
+    .email input,
+    .password input {
+        height: 35px;
+    }
+
+    #btnIngresar {
+        font-size: 15px;
+    }
+
+    .ingreso-bienvenida {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .logo {
+        width: 30%;
+        height: 100%;
+    }
+
+    .logo img {
+        margin-left: 20px;
+        height: 100%;
+    }
+
+    .logo p {
+        display: none;
+    }
+
+    .bienvenida {
+        margin: 0;
+        padding: 0;
+        height: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .bienvenida h1 {
+        font-size: 2em;
+        margin: 0;
+        margin-bottom: 5px;
+    }
+    
+    .bienvenida p {
+        font-size: .9em;
+        margin: 0;
+    }
+}
